@@ -1,6 +1,6 @@
 # Techdome-frontend/Dockerfile
 
-# Use a lightweight Node.js image based on Alpine Linux
+# Lightweight Node.js image 
 FROM node:14-alpine
 
 # Set the working directory to /app
@@ -9,17 +9,17 @@ WORKDIR /app
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Install any needed packages
+# Install any needed packages from package.json
 RUN npm install
 
-# Copy the rest of the application code
+# Copy the current data to working directory
 COPY . .
 
-# Expose the port the app runs on
+# Exposing port
 EXPOSE 3000
 
-# Define environment variable
+# Environment variable
 ENV NODE_ENV production
 
-# Run the app
+# To tun the app
 CMD ["npm", "start"]

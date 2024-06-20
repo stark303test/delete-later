@@ -4,7 +4,7 @@
 FROM node:14-alpine
 
 # Set the working directory to /app
-WORKDIR /app
+WORKDIR /NodeApp
 
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./

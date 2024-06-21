@@ -10,7 +10,7 @@ sudo usermod -aG docker ubuntu
 git clone https://github.com/Anand-1432/Techdome-backend.git
 git clone https://github.com/Anand-1432/Techdome-frontend.git
 cd Techdome-backend
-wget https://github.com/stark303test/delete-later/blob/master/.env
+wget https://github.com/stark303test/delete-later/blob/master/.env?raw=true -O .env
 wget https://github.com/stark303test/delete-later/blob/master/backend/Dockerfile?raw=true -O Dockerfile
 npm install
 sudo npm install -g pm2

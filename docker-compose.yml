@@ -6,16 +6,12 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:3000"
-    environment:
-      - NODE_ENV=production
   backend:
     build:
       context: ./Techdome-backend
       dockerfile: Dockerfile
     ports:
       - "5000:5000"
-    environment:
-      - NODE_ENV=production
     depends_on:
       - database
   database:

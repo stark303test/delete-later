@@ -18,8 +18,5 @@ COPY . .
 # Exposing port
 EXPOSE 3000
 
-# Environment variable
-ENV NODE_ENV production
-
 # To tun the app
 CMD ["npm", "start"]

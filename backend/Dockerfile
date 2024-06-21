@@ -21,8 +21,5 @@ COPY .env .env
 # Exposing port the app runs on
 EXPOSE 5000
 
-# Environment variable
-ENV NODE_ENV production
-
 # To Run the app
 CMD ["npm", "start"]
